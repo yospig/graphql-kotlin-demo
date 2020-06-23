@@ -4,4 +4,8 @@ type User {
     first_name: String!
     last_name: String!
     employee_number: String!
+    email: String!
+    ad_name: ActiveDirectory
+    SNS_name: Twitter
+    history_org : [Organization]
 }

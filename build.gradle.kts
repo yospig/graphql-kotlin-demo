@@ -22,9 +22,6 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-//	implementation ("com.graphql-java:graphql-spring-boot-starter:5.0.2")
-//	implementation ("com.graphql-java:graphql-java-tools:5.2.4")
-//	implementation ("com.graphql-java:graphiql-spring-boot-starter:5.0.2")
 	implementation ("com.graphql-java-kickstart:graphql-spring-boot-starter:7.0.1")
 	runtimeOnly ("com.graphql-java-kickstart:altair-spring-boot-starter:7.0.1")
 	runtimeOnly("com.graphql-java-kickstart:graphiql-spring-boot-starter:7.0.1")

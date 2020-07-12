@@ -6,7 +6,8 @@ import graphql.kickstart.tools.GraphQLQueryResolver
 import org.springframework.stereotype.Component
 
 @Component
-class BookResolver(val bookRepo: BookRepo): GraphQLQueryResolver {
+class BookResolver(): GraphQLQueryResolver {
+    val bookRepo = BookRepo()
     fun books(): List<Book> {
         return bookRepo.findAll()
     }

@@ -6,4 +6,4 @@ data class User(val full_name: String,
                 val employee_number: String,
                 val email: String,
                 val ad_name: String,
-                val SNS_name: String)
+                val sns_name: String)

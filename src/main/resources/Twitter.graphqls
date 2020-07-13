@@ -1,3 +1,5 @@
 type Twitter {
+    id: ID!
+    userId: ID!
     name: String!
 }

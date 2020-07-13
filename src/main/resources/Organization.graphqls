@@ -1,4 +1,6 @@
 type Organization {
+    id: ID!
+    userId: ID!
     code: String!
     name: String!
 }

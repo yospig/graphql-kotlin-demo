@@ -1,3 +1,5 @@
 type ActiveDirectory {
+    id: ID!
+    userId: ID!
     name: String!
 }

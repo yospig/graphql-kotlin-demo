@@ -1,5 +1,6 @@
 package com.yospig.graphqlkotlindemo.repositories
 
+import com.yospig.graphqlkotlindemo.models.Organization
 import com.yospig.graphqlkotlindemo.models.User
 
 class UserRepo {

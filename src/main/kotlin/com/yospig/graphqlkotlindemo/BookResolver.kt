@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component
 @Component
 class BookResolver(): GraphQLQueryResolver {
     val bookRepo = BookRepo()
-    fun books(): List<Book> {
+    fun getBooks(): List<Book> {
         return bookRepo.findAll()
     }
-    fun getBookById(id: String): Book {
+    fun getBook(id: String): Book {
         return bookRepo.getBookById(id)
     }
 }

@@ -1,4 +1,4 @@
 type Book {
-    id: String!
+    id: ID
     name: String!
 }

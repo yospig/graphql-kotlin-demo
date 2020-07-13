@@ -1,5 +1,6 @@
 type Query {
-    books: [Book]
-    getBookById(id: String!): Book
+    getBooks: [Book]
+    getBook(id: String!): Book
+    getUsers: [User]
 }
 

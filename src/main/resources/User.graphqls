@@ -1,11 +1,9 @@
 type User {
-    id: String!
+    id: ID!
     full_name: String!
     first_name: String!
     last_name: String!
+    age: Int!
     employee_number: String!
     email: String!
-    ad_name: ActiveDirectory
-    SNS_name: Twitter
-    history_org : [Organization]
 }

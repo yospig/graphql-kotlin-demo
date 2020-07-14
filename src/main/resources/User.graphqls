@@ -6,5 +6,5 @@ type User {
     age: Int!
     employee_number: String!
     email: String!
-#    organizations: [Organization]
+    organizations: [Organization]
 }

@@ -3,7 +3,7 @@ package com.yospig.graphqlkotlindemo.repositories
 import com.yospig.graphqlkotlindemo.models.Organization
 
 class OrganizationRepo {
-    fun findByUserId(userId: String): MutableList<Organization> {
+    fun findByUserId(userId: String): List<Organization> {
         var organizations: MutableList<Organization> = mutableListOf()
         organizations.add(Organization(
             "1",
@@ -13,7 +13,7 @@ class OrganizationRepo {
         ))
         organizations.add(Organization(
             "2",
-            "1",
+            "2",
             "00002",
             "クラウドサービス部"
         ))
@@ -23,6 +23,6 @@ class OrganizationRepo {
             "00003",
             "新規事業部"
         ))
-        return organizations
+        return organizations.filter{ it.userId.contentEquals(userId) }
     }
 }

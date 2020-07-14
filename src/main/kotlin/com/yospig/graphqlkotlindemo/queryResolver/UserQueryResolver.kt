@@ -1,4 +1,4 @@
-package com.yospig.graphqlkotlindemo
+package com.yospig.graphqlkotlindemo.queryResolver
 
 import com.yospig.graphqlkotlindemo.models.Organization
 import com.yospig.graphqlkotlindemo.models.User
@@ -8,13 +8,9 @@ import graphql.kickstart.tools.GraphQLQueryResolver
 import org.springframework.stereotype.Component
 
 @Component
-class UserResolver(): GraphQLQueryResolver {
+class UserQueryResolver(): GraphQLQueryResolver {
     val userRepo = UserRepo()
     fun getUsers(): List<User> {
         return userRepo.findAll()
-    }
-    fun organizations(user: User): List<Organization>{
-        val organizationRepo = OrganizationRepo()
-        return organizationRepo.findByUserId(user.id)
     }
 }
